@@ -154,18 +154,16 @@ nav{
             padding: 0.25em;
         } 
     }
-    hr{
-        margin: 2em auto;
-        border: 1px solid white;
-        width: 45%;
-    }
-    /*.barre{
+    
+    //Barre de séparation
+    .barre{
         border-top: 1px solid white;
         @include placement_corps(45%)
     }
     .barren{
         @include placement_corps(20%)
-    }*/
+    }
+
     .gallerie{
         display: flex;
         flex-flow: row;
@@ -241,6 +239,7 @@ nav{
         flex: 0 1 20%;
         height: 8vh;
         min-width: 15vw;
+        max-height: 50px;
         @extend %centrer;
         transition: .1s transform;
         transform: translateZ(0);

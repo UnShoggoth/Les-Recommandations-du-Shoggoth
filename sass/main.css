@@ -86,13 +86,6 @@ nav .lien:hover {
   color: white;
   align-content: flex-start;
   font-size: calc(0.8em + 0.5vmin);
-  /*.barre{
-        border-top: 1px solid white;
-        @include placement_corps(45%)
-    }
-    .barren{
-        @include placement_corps(20%)
-    }*/
 }
 
 .corps h1 {
@@ -220,10 +213,15 @@ nav .lien:hover {
   padding: 0.25em;
 }
 
-.corps hr {
-  margin: 2em auto;
-  border: 1px solid white;
-  width: 45%;
+.corps .barre {
+  border-top: 1px solid white;
+  margin: 2em 2.5%;
+  flex: 1 1 45%;
+}
+
+.corps .barren {
+  margin: 2em 2.5%;
+  flex: 1 1 20%;
 }
 
 .corps .gallerie {
@@ -311,6 +309,7 @@ nav .lien:hover {
   flex: 0 1 20%;
   height: 8vh;
   min-width: 15vw;
+  max-height: 50px;
   transition: .1s transform;
   transform: translateZ(0);
 }
