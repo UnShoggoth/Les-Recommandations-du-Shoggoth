@@ -1,0 +1,24 @@
+//background
+@mixin background-couleur($color, $attach: fixed){
+    background: $color;
+    background-attachment: $attach;
+}
+
+@mixin background-image($url, $size: cover, $repeat: no-repeat){
+    background: url("#{$url}");
+    background-size: $size;
+    background-repeat: $repeat;
+}
+
+//traitement des éléments
+@mixin image($width, $height: auto){
+    width: $width;
+    height: $height;
+    align-self: center;
+    margin: 1em 0;
+}
+
+@mixin placement_corps($taille){
+    margin: 2em 2.5%;
+    flex: 1 1 $taille;
+}

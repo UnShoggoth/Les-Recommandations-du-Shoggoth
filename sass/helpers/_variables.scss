@@ -1,0 +1,24 @@
+//couleurs
+$bleu: (rgb(60, 135, 220));
+$bleu_fonce: (rgb(10, 30, 130));
+$jaune_MSLN: (#ffbf00);
+$gris_fonce: (rgb(25, 25, 25));
+$noir: (rgb(10, 10, 10));
+$gris_clair: (rgb(40, 40, 40));
+
+//placeholders
+%centrer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+%lien_blanc{
+    text-decoration: none;
+    color: white;
+}
+
+%placement_pied{
+    margin-top: 5vh;
+    flex: 1 1 0;
+}
